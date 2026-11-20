@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>GTA VI trophy forecast — practice case p00</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:960px;margin:2em auto;padding:0 1em;color:#222}
+table{border-collapse:collapse;width:100%;font-size:.9em}
+th,td{border-bottom:1px solid #ddd;padding:.35em .5em;text-align:left}
+th{background:#f4f4f4} .num{text-align:right;font-variant-numeric:tabular-nums}
+h1{font-size:1.4em} .note{background:#fff8e1;border:1px solid #f0d890;padding:.7em 1em}
+</style></head><body>
+<h1>GTA VI trophy earn-rate forecast — practice case p00</h1>
+<p class="note"><b>What this is.</b> The forecast our program
+(<code>main.py</code>) writes for the practice case <code>p00</code>: checkpoint
+2026-11-19T03:00:00Z, target 2026-11-19T04:30:00Z, from the seven launch-night
+reads (638 players tracked, every rate unchanged). It is an illustration of the
+model on real case data — <b>not</b> the final forecast, which is computed at
+grading time from the case cut at the 2026-11-21T11:30:00Z deadline. All numbers
+are produced by running the model; none are hand-written.</p>
+<p><b>Reading the table.</b> <i>Last</i> is the rate in the case's last read.
+<i>Median</i> is the 50% quantile of the forecast rate at the target;
+<i>90% range</i> is the 5%–95% interval. Medians sit below the last rates for
+almost every trophy: the model expects Exophase's next refresh to dilute the
+rates as thousands of new players arrive who have earned almost nothing yet —
+on launch night the first refresh took tracked players 638 → 3,868 and every
+rate but the 100% one fell. The opening trophy stays near 100%: every tracked
+player holds it.</p>
+<table><thead><tr><th>#</th><th>Trophy</th><th>Description</th><th>Tier</th>
+<th>Last %</th><th>Median %</th><th>90% range %</th></tr></thead><tbody>
+<tr><td>1</td><td>Vice Got a Price!</td><td>Congratulations! You&#x27;re a Leonida Legend.</td><td>platinum</td><td class="num">0.63</td><td class="num">0.17</td><td class="num">0.02 – 1.57</td></tr>
+<tr><td>2</td><td>Just Like Paradise</td><td>Complete Gone Fishing.</td><td>bronze</td><td class="num">100.00</td><td class="num">99.90</td><td class="num">99.06 – 99.99</td></tr>
+<tr><td>3</td><td>Paradise Lost</td><td>Complete Chapter 1.</td><td>bronze</td><td class="num">1.25</td><td class="num">0.49</td><td class="num">0.05 – 4.45</td></tr>
+<tr><td>4</td><td>T**s Ass Drug Money</td><td>Complete Chapter 2.</td><td>bronze</td><td class="num">1.10</td><td class="num">0.40</td><td class="num">0.04 – 3.68</td></tr>
+<tr><td>5</td><td>Vice City, Baby!</td><td>Complete Chapter 3.</td><td>bronze</td><td class="num">1.10</td><td class="num">0.38</td><td class="num">0.04 – 3.46</td></tr>
+<tr><td>6</td><td>Top Of The World, Ma</td><td>Complete Chapter 4.</td><td>bronze</td><td class="num">1.10</td><td class="num">0.36</td><td class="num">0.04 – 3.26</td></tr>
+<tr><td>7</td><td>You Gotta Know When to Get Off</td><td>Complete the final mission.</td><td>gold</td><td class="num">1.10</td><td class="num">0.33</td><td class="num">0.04 – 3.07</td></tr>
+<tr><td>8</td><td>Trust</td><td>Complete Breakfast Run.</td><td>bronze</td><td class="num">1.10</td><td class="num">0.40</td><td class="num">0.04 – 3.68</td></tr>
+<tr><td>9</td><td>Break the Bank</td><td>Complete The Cartel Heist.</td><td>bronze</td><td class="num">1.10</td><td class="num">0.40</td><td class="num">0.04 – 3.68</td></tr>
+<tr><td>10</td><td>Family Matters</td><td>Complete Child&#x27;s Play.</td><td>bronze</td><td class="num">1.10</td><td class="num">0.40</td><td class="num">0.04 – 3.68</td></tr>
+<tr><td>11</td><td>DWNFALL</td><td>Complete Headliners.</td><td>bronze</td><td class="num">1.10</td><td class="num">0.40</td><td class="num">0.04 – 3.68</td></tr>
+<tr><td>12</td><td>Hi-Jacked</td><td>Complete VCIA Takedown.</td><td>bronze</td><td class="num">1.10</td><td class="num">0.40</td><td class="num">0.04 – 3.68</td></tr>
+<tr><td>13</td><td>Snow Storm</td><td>Complete Operation Savage Glory.</td><td>bronze</td><td class="num">1.10</td><td class="num">0.40</td><td class="num">0.04 – 3.68</td></tr>
+<tr><td>14</td><td>A Long Road</td><td>Attain 100% Completion.</td><td>gold</td><td class="num">0.63</td><td class="num">0.17</td><td class="num">0.02 – 1.57</td></tr>
+<tr><td>15</td><td>Cunning Stunts</td><td>Complete 250 Stunts.</td><td>silver</td><td class="num">0.63</td><td class="num">0.18</td><td class="num">0.02 – 1.67</td></tr>
+<tr><td>16</td><td>Master of None</td><td>Try each type of activity once.</td><td>bronze</td><td class="num">0.78</td><td class="num">0.33</td><td class="num">0.03 – 3.00</td></tr>
+<tr><td>17</td><td>The Shootist</td><td>Earn a gold medal in all Shooting Range challenges.</td><td>silver</td><td class="num">0.63</td><td class="num">0.18</td><td class="num">0.02 – 1.67</td></tr>
+<tr><td>18</td><td>Top Fun</td><td>Win a Top Fun Drone Race at every location.</td><td>bronze</td><td class="num">0.63</td><td class="num">0.22</td><td class="num">0.02 – 2.01</td></tr>
+<tr><td>19</td><td>Earn Cash, Not Kudos</td><td>Win 20 different races.</td><td>bronze</td><td class="num">0.78</td><td class="num">0.27</td><td class="num">0.03 – 2.50</td></tr>
+<tr><td>20</td><td>Baited My Tackle</td><td>Beat Cal in a fishing challenge.</td><td>bronze</td><td class="num">2.04</td><td class="num">0.70</td><td class="num">0.07 – 6.27</td></tr>
+<tr><td>21</td><td>Stick Fiddler</td><td>Complete an arcade game.</td><td>bronze</td><td class="num">0.94</td><td class="num">0.35</td><td class="num">0.04 – 3.17</td></tr>
+<tr><td>22</td><td>Road to Rehabilitation</td><td>Complete the final mission for Andy.</td><td>bronze</td><td class="num">0.78</td><td class="num">0.27</td><td class="num">0.03 – 2.50</td></tr>
+<tr><td>23</td><td>This Was No Boat Accident</td><td>Complete the final mission for Kenton.</td><td>bronze</td><td class="num">0.78</td><td class="num">0.27</td><td class="num">0.03 – 2.50</td></tr>
+<tr><td>24</td><td>The Lone Rider</td><td>Complete the final mission for Billy.</td><td>bronze</td><td class="num">0.78</td><td class="num">0.27</td><td class="num">0.03 – 2.50</td></tr>
+<tr><td>25</td><td>Strangers &amp; Freaks</td><td>Complete 8 mission strands for strangers across the state of Leonida.</td><td>silver</td><td class="num">0.63</td><td class="num">0.23</td><td class="num">0.02 – 2.13</td></tr>
+<tr><td>26</td><td>Supply &amp; Demand</td><td>Complete the final mission for Randy.</td><td>bronze</td><td class="num">0.63</td><td class="num">0.22</td><td class="num">0.02 – 2.01</td></tr>
+<tr><td>27</td><td>Spin On This!</td><td>Complete the final mission for Tyrone.</td><td>bronze</td><td class="num">0.78</td><td class="num">0.27</td><td class="num">0.03 – 2.50</td></tr>
+<tr><td>28</td><td>Positive Mental Attitude</td><td>Meditate at every spot across Leonida.</td><td>bronze</td><td class="num">0.63</td><td class="num">0.19</td><td class="num">0.02 – 1.77</td></tr>
+<tr><td>29</td><td>Fair Game</td><td>Hunt a unique animal for Bret.</td><td>bronze</td><td class="num">0.78</td><td class="num">0.27</td><td class="num">0.03 – 2.50</td></tr>
+<tr><td>30</td><td>Don&#x27;t Touch My Deck</td><td>Complete 3 Collectible Card sets.</td><td>silver</td><td class="num">0.63</td><td class="num">0.18</td><td class="num">0.02 – 1.67</td></tr>
+<tr><td>31</td><td>You WAiNKer!</td><td>WAiNK It at 100 locations.</td><td>silver</td><td class="num">0.63</td><td class="num">0.18</td><td class="num">0.02 – 1.67</td></tr>
+<tr><td>32</td><td>One Last Thing</td><td>Complete 50 Challenges.</td><td>bronze</td><td class="num">0.63</td><td class="num">0.19</td><td class="num">0.02 – 1.77</td></tr>
+<tr><td>33</td><td>Hot Together</td><td>Lose a 4 star Wanted Level with your partner and escape the heat.</td><td>bronze</td><td class="num">0.94</td><td class="num">0.32</td><td class="num">0.03 – 2.98</td></tr>
+<tr><td>34</td><td>Retail Therapy</td><td>Rob 3 shops back-to-back with your partner without losing your Wanted Level.</td><td>bronze</td><td class="num">0.78</td><td class="num">0.27</td><td class="num">0.03 – 2.50</td></tr>
+<tr><td>35</td><td>Whip It Good</td><td>Discover 100 vehicles.</td><td>bronze</td><td class="num">1.25</td><td class="num">0.36</td><td class="num">0.04 – 3.29</td></tr>
+<tr><td>36</td><td>Gunslinger</td><td>Take down 5 enemies in a single use of Combat Focus.</td><td>bronze</td><td class="num">0.78</td><td class="num">0.27</td><td class="num">0.03 – 2.50</td></tr>
+<tr><td>37</td><td>Catch Me If You Can</td><td>Make an unscheduled departure at VCIA.</td><td>bronze</td><td class="num">0.94</td><td class="num">0.32</td><td class="num">0.03 – 2.98</td></tr>
+<tr><td>38</td><td>Challenging Tank</td><td>Kinda hot in these Rhinos.</td><td>bronze</td><td class="num">1.57</td><td class="num">0.54</td><td class="num">0.06 – 4.88</td></tr>
+<tr><td>39</td><td>Sneakthief</td><td>Rob a jewelry store without being detected.</td><td>bronze</td><td class="num">0.94</td><td class="num">0.32</td><td class="num">0.03 – 2.98</td></tr>
+<tr><td>40</td><td>Maximum Withdrawal</td><td>Rob 5 Bank Vaults and escape.</td><td>silver</td><td class="num">0.78</td><td class="num">0.27</td><td class="num">0.03 – 2.50</td></tr>
+<tr><td>41</td><td>A Classic Blitz Play</td><td>Rob an Armored Truck and escape.</td><td>bronze</td><td class="num">0.94</td><td class="num">0.32</td><td class="num">0.03 – 2.98</td></tr>
+<tr><td>42</td><td>The Goodtime State</td><td>Explore all of Leonida.</td><td>bronze</td><td class="num">0.78</td><td class="num">0.24</td><td class="num">0.03 – 2.21</td></tr>
+<tr><td>43</td><td>Pest Control</td><td>Rob an Illegal Operation belonging to each gang.</td><td>bronze</td><td class="num">0.78</td><td class="num">0.27</td><td class="num">0.03 – 2.50</td></tr>
+<tr><td>44</td><td>In The Beginning…</td><td>Enjoy a cocktail with a view on Ocean Beach.</td><td>bronze</td><td class="num">0.94</td><td class="num">0.39</td><td class="num">0.04 – 3.58</td></tr>
+<tr><td>45</td><td>Capital Offense</td><td>Smash your way out of a vehicle showroom in classic style.</td><td>bronze</td><td class="num">0.78</td><td class="num">0.27</td><td class="num">0.03 – 2.50</td></tr>
+<tr><td>46</td><td>Let’s Go Bowling</td><td>Follow-through at the Kolt &amp; Associates&#x27; bowling alley.</td><td>bronze</td><td class="num">0.78</td><td class="num">0.33</td><td class="num">0.03 – 3.00</td></tr>
+<tr><td>47</td><td>Personal Best</td><td>A partnership with mass appeal.</td><td>bronze</td><td class="num">0.78</td><td class="num">0.27</td><td class="num">0.03 – 2.50</td></tr>
+<tr><td>48</td><td>Actions Speak Louder</td><td>Choices made (for better or worse).</td><td>bronze</td><td class="num">0.78</td><td class="num">0.27</td><td class="num">0.03 – 2.50</td></tr>
+<tr><td>49</td><td>Bad Luck, I Guess</td><td>Second time&#x27;s the charm.</td><td>bronze</td><td class="num">0.78</td><td class="num">0.27</td><td class="num">0.03 – 2.50</td></tr>
+<tr><td>50</td><td>The Truth Is Out There</td><td>What the hell just happened?</td><td>bronze</td><td class="num">0.78</td><td class="num">0.27</td><td class="num">0.03 – 2.50</td></tr>
+<tr><td>51</td><td>Ten Pin</td><td>Bowl &#x27;em over with a melee drive-by.</td><td>bronze</td><td class="num">0.78</td><td class="num">0.33</td><td class="num">0.03 – 3.00</td></tr>
+<tr><td>52</td><td>Dime on the Dollar</td><td>Earn $250,000 laundering Marked Bills through your contacts.</td><td>bronze</td><td class="num">0.78</td><td class="num">0.27</td><td class="num">0.03 – 2.50</td></tr>
+<tr><td>53</td><td>Treat Yo Self</td><td>Spend $100,000 across all shops.</td><td>bronze</td><td class="num">0.94</td><td class="num">0.32</td><td class="num">0.03 – 2.98</td></tr>
+<tr><td>54</td><td>Little Boxes</td><td>Purchase all garage properties.</td><td>bronze</td><td class="num">0.78</td><td class="num">0.27</td><td class="num">0.03 – 2.50</td></tr>
+<tr><td>55</td><td>On the Spot</td><td>Register 10 vehicles to the Scooter Bros app.</td><td>bronze</td><td class="num">0.78</td><td class="num">0.27</td><td class="num">0.03 – 2.50</td></tr>
+</tbody></table>
+<h2>Method</h2>
+<p>Short version — the full write-up is in <code>METHODOLOGY.md</code>. Each
+rate is a ratio, earners over players tracked, and the two sides are forecast
+separately as log-linear trends in log-time, with trophy-class priors (story
+chapters rise steeply, 250-stunt grinds barely move) and a saturating fit that
+stops a rate's growth bending toward its ceiling. The answer is the page at
+the target as of Exophase's last refresh before it, so the forecast is
+evaluated half a refresh interval early. Spread combines the fits' prediction
+intervals, a horizon random-walk floor, a refresh-jump term and a flat
+allowance for model error.</p>
+<h2>Sources</h2>
+<ul>
+<li>Trophy list, launch-night rates and the 04:30 refresh: the competition
+kit's own case files and rules (observed data).</li>
+<li>GTA V long-run trophy rates (PocketPSN) and GTA VI sales forecasts
+(Compound, Sensor Tower, Newzoo): used only to shape the priors and ceilings;
+see METHODOLOGY.md for the numbers and the caveats.</li>
+<li>Campaign length (~50 h) and Platinum (~200+ h): Polygon / Insider
+Gaming, unofficial.</li>
+</ul>
+<p><i>Generated from the model output (<code>out/p00.out</code>), 2026-11-20.
+The final entry is the program, not this page.</i></p>
+</body></html>
